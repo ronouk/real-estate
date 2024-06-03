@@ -1,0 +1,364 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/JRYjXxh/Luxury-Penthouse-in-New-York.webp",
+    "estate_title": "Luxury Penthouse in New York",
+    "segment_name": "Penthouse",
+    "description": "A stunning penthouse located in the heart of New York City with panoramic views of the skyline.",
+    "price": "$5,000,000",
+    "status": "sale",
+    "area": "3500 sq ft",
+    "location": "New York, NY",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "gym",
+      "private elevator"
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/RcwT0Fg/Beachfront-Villa-in-Malibu.webp",
+    "estate_title": "Beachfront Villa in Malibu",
+    "segment_name": "Beachfront Property",
+    "description": "A luxurious beachfront villa with direct access to the beach and stunning ocean views.",
+    "price": "$7,500,000",
+    "status": "sale",
+    "area": "5000 sq ft",
+    "location": "Malibu, CA",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "home theater",
+      "private beach access"
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/wRxwCtm/Private-Island-in-the-Bahamas.jpg",
+    "estate_title": "Private Island in the Bahamas",
+    "segment_name": "Private Island",
+    "description": "A private island in the Bahamas featuring a luxurious villa, beautiful beaches, and tropical gardens.",
+    "price": "$25,000,000",
+    "status": "sale",
+    "area": "10000 sq ft",
+    "location": "Bahamas",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "private dock",
+      "helicopter pad"
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/d2cpBQW/Mediterranean-Villa-in-Tuscany.jpg",
+    "estate_title": "Mediterranean Villa in Tuscany",
+    "segment_name": "Villa",
+    "description": "A beautiful Mediterranean villa set in the rolling hills of Tuscany, with breathtaking views and luxurious amenities.",
+    "price": "$4,000,000",
+    "status": "sale",
+    "area": "4000 sq ft",
+    "location": "Tuscany, Italy",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "wine cellar",
+      "garden"
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/0cZ0Bnf/Modern-Mansion-in-Beverly-Hills.webp",
+    "estate_title": "Modern Mansion in Beverly Hills",
+    "segment_name": "Mansion",
+    "description": "A state-of-the-art mansion in Beverly Hills with cutting-edge design and top-of-the-line amenities.",
+    "price": "$15,000,000",
+    "status": "sale",
+    "area": "8000 sq ft",
+    "location": "Beverly Hills, CA",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "home theater",
+      "smart home technology"
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/HCchG3G/Luxury-Resort-in-Maldives.jpg",
+    "estate_title": "Luxury Resort in Maldives",
+    "segment_name": "Resort",
+    "description": "An exclusive resort in the Maldives offering luxurious overwater bungalows and pristine beaches.",
+    "price": "$10,000 per night",
+    "status": "rent",
+    "area": "1500 sq ft",
+    "location": "Maldives",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "spa",
+      "water sports"
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/ZdsmDTQ/Seaside-Cottage-in-Santorini.webp",
+    "estate_title": "Seaside Cottage in Santorini",
+    "segment_name": "Beachfront Property",
+    "description": "A charming seaside cottage in Santorini with spectacular views of the Aegean Sea.",
+    "price": "$2,500 per week",
+    "status": "rent",
+    "area": "1200 sq ft",
+    "location": "Santorini, Greece",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "terrace",
+      "outdoor dining"
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/wd3w0Wk/Countryside-Estate-in-Provence.jpg",
+    "estate_title": "Countryside Estate in Provence",
+    "segment_name": "Estate",
+    "description": "A grand countryside estate in Provence with vineyards, olive groves, and luxurious accommodations.",
+    "price": "$6,000,000",
+    "status": "sale",
+    "area": "6000 sq ft",
+    "location": "Provence, France",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "vineyard",
+      "garden"
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/tQ3rTKp/Ski-Chalet-in-Aspen.jpg",
+    "estate_title": "Ski Chalet in Aspen",
+    "segment_name": "Resort",
+    "description": "A luxurious ski chalet in Aspen with direct access to the slopes and stunning mountain views.",
+    "price": "$3,500 per night",
+    "status": "rent",
+    "area": "4500 sq ft",
+    "location": "Aspen, CO",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "hot tub",
+      "ski-in/ski-out access"
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co/hXBsRRm/Colonial-Mansion-in-Savannah.jpg",
+    "estate_title": "Colonial Mansion in Savannah",
+    "segment_name": "Mansion",
+    "description": "A historic colonial mansion in Savannah with beautiful gardens and elegant interiors.",
+    "price": "$4,500,000",
+    "status": "sale",
+    "area": "7000 sq ft",
+    "location": "Savannah, GA",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "library",
+      "garden"
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co/8sFCP17/Contemporary-Villa-in-Los-Angeles.jpg",
+    "estate_title": "Contemporary Villa in Los Angeles",
+    "segment_name": "Villa",
+    "description": "A sleek, contemporary villa in Los Angeles with cutting-edge design and breathtaking city views.",
+    "price": "$8,000,000",
+    "status": "sale",
+    "area": "6000 sq ft",
+    "location": "Los Angeles, CA",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "home theater",
+      "rooftop terrace"
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co/QnvTS8d/Luxury-Apartment-in-Tokyo.jpg",
+    "estate_title": "Luxury Apartment in Tokyo",
+    "segment_name": "Penthouse",
+    "description": "A high-rise luxury apartment in Tokyo with stunning city views and modern amenities.",
+    "price": "$4,500,000",
+    "status": "sale",
+    "area": "3000 sq ft",
+    "location": "Tokyo, Japan",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "gym",
+      "balcony"
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://i.ibb.co/6smBQGd/Historic-Castle-in-Scotland.jpg",
+    "estate_title": "Historic Castle in Scotland",
+    "segment_name": "Estate",
+    "description": "A grand historic castle in Scotland, offering luxurious accommodations and stunning countryside views.",
+    "price": "$12,000,000",
+    "status": "sale",
+    "area": "10000 sq ft",
+    "location": "Scotland, UK",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "library",
+      "garden",
+      "banquet hall"
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://i.ibb.co/DbJszw9/Modern-Penthouse-in-Dubai.jpg",
+    "estate_title": "Modern Penthouse in Dubai",
+    "segment_name": "Penthouse",
+    "description": "A luxurious modern penthouse in Dubai with panoramic views of the city and the Persian Gulf.",
+    "price": "$10,000,000",
+    "status": "sale",
+    "area": "5000 sq ft",
+    "location": "Dubai, UAE",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "home theater",
+      "gym"
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://i.ibb.co/FV7Zyxk/Tropical-Villa-in-Bali.jpg",
+    "estate_title": "Tropical Villa in Bali",
+    "segment_name": "Villa",
+    "description": "A stunning tropical villa in Bali, offering luxury and tranquility with beautiful garden views.",
+    "price": "$3,000,000",
+    "status": "sale",
+    "area": "4000 sq ft",
+    "location": "Bali, Indonesia",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "spa",
+      "garden"
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://i.ibb.co/bzHFd22/Oceanfront-Mansion-in-Miami.jpg",
+    "estate_title": "Oceanfront Mansion in Miami",
+    "segment_name": "Mansion",
+    "description": "A luxurious oceanfront mansion in Miami with direct beach access and stunning ocean views.",
+    "price": "$20,000,000",
+    "status": "sale",
+    "area": "9000 sq ft",
+    "location": "Miami, FL",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "home theater",
+      "private beach access"
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://i.ibb.co/4trTG7x/Luxury-Chalet-in-the-Swiss-Alps.jpg",
+    "estate_title": "Luxury Chalet in the Swiss Alps",
+    "segment_name": "Resort",
+    "description": "A luxurious chalet in the Swiss Alps with breathtaking mountain views and direct access to ski slopes.",
+    "price": "$15,000 per week",
+    "status": "rent",
+    "area": "5000 sq ft",
+    "location": "Swiss Alps, Switzerland",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "hot tub",
+      "ski-in/ski-out access"
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://i.ibb.co/LYhpLMR/Exclusive-Beach-House-in-Hawaii.jpg",
+    "estate_title": "Exclusive Beach House in Hawaii",
+    "segment_name": "Beachfront Property",
+    "description": "An exclusive beach house in Hawaii with stunning ocean views and direct beach access.",
+    "price": "$12,000,000",
+    "status": "sale",
+    "area": "5500 sq ft",
+    "location": "Hawaii, USA",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "private beach access",
+      "outdoor shower"
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://i.ibb.co/DRhT7KQ/Luxury-Estate-in-Napa-Valley.jpg",
+    "estate_title": "Luxury Estate in Napa Valley",
+    "segment_name": "Estate",
+    "description": "A grand luxury estate in Napa Valley, featuring vineyards, elegant interiors, and stunning views.",
+    "price": "$18,000,000",
+    "status": "sale",
+    "area": "7500 sq ft",
+    "location": "Napa Valley, CA",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "wine cellar",
+      "vineyard"
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://i.ibb.co/nn1M3f1/Modern-Villa-in-Ibiza.jpg",
+    "estate_title": "Modern Villa in Ibiza",
+    "segment_name": "Villa",
+    "description": "A sleek modern villa in Ibiza with stunning sea views, luxurious amenities, and beautiful gardens.",
+    "price": "$5,000,000",
+    "status": "rent",
+    "area": "5000 sq ft",
+    "location": "Ibiza, Spain",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen",
+      "home theater",
+      "garden",
+	  "helicopter pad"
+    ]
+  }
+]
