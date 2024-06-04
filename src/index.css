@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active{
+    color: #CA8A04 !important;
+    background-color: transparent !important;
+}
+
+.pending{
+    color: white !important;
+    background-color: transparent !important;
+}
