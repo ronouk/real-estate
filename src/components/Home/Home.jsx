@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Banner from "../homeComponenets/Banner";
+import Ribbon from "../homeComponenets/Ribbon";
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
                 <title>LRE | Home</title>
             </Helmet>
             <Banner></Banner>
+            <Ribbon></Ribbon>
             
         </div>
     );
