@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import PropertyCard from "../homeComponenets/PropertyCard";
+import PropertyCard from "../property/PropertyCard";
 import { Helmet } from "react-helmet-async";
 
 const RealEstate = () => {

@@ -5,6 +5,7 @@ import ErrorPage from "../components/ErrorPage/ErrorPage";
 import Register from "../components/authentication/Register";
 import Login from "../components/authentication/Login";
 import RealEstate from "../components/real-estate/RealEstate";
+import SingleProperty from "../components/property/SingleProperty";
 
 const router = createBrowserRouter([
     {
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
             {
                 path: '/real-estate',
                 element: <RealEstate></RealEstate>,
+                loader: () => fetch('/data-luxury.json')
+            },
+            {
+                path: '/viewdetails/:id',
+                element: <SingleProperty></SingleProperty>,
                 loader: () => fetch('/data-luxury.json')
             }
         ]

@@ -1,10 +1,16 @@
+// import { useLoaderData } from "react-router-dom";
 
 const Banner = () => {
+    // const properties = useLoaderData();
+    // const randId = Math.ceil(Math.random()*20);
+    // console.log(randId);
+    // console.log(properties);
     return (
         <div data-aos="fade-up" data-aos-duration="4000">
             <div className="carousel w-full h-[600px] mb-12">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src="https://images.mansionglobal.com/im-552743?width=1299&height=866" className="w-full object-cover rounded-xl" />
+                    {/* <img src={properties[randId].image} className="w-full object-cover rounded-xl" /> */}
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" className="btn btn-circle">❮</a>
                         <a href="#slide2" className="btn btn-circle">❯</a>
@@ -15,6 +21,7 @@ const Banner = () => {
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
                     <img src="https://www.travelandleisure.com/thmb/181yagnEsM84ITqhxIgTveFqzOM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-montage-cay-FULLTIMERESORT0823-4f91604fae9340d18c5f6226ea612439.jpg" className="w-full object-cover rounded-xl" />
+                    {/* <img src={properties[randId].image} className="w-full object-cover rounded-xl" /> */}
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" className="btn btn-circle">❮</a>
                         <a href="#slide3" className="btn btn-circle">❯</a>
@@ -25,6 +32,7 @@ const Banner = () => {
                 </div>
                 <div id="slide3" className="carousel-item relative w-full">
                     <img src="https://www.richmonts.com/application/files/7416/9451/3834/Luxury_Beachside_Villa1.jpg" className="w-full object-cover rounded-xl" />
+                    {/* <img src={properties[randId].image} className="w-full object-cover rounded-xl" /> */}
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" className="btn btn-circle">❮</a>
                         <a href="#slide4" className="btn btn-circle">❯</a>
@@ -35,6 +43,7 @@ const Banner = () => {
                 </div>
                 <div id="slide4" className="carousel-item relative w-full">
                     <img src="https://d15zjc2r4e8kr7.cloudfront.net/8346/blog/Beach%20View-1A.png" className="w-full object-cover rounded-xl" />
+                    {/* <img src={properties[randId].image} className="w-full object-cover rounded-xl" /> */}
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" className="btn btn-circle">❮</a>
                         <a href="#slide5" className="btn btn-circle">❯</a>
@@ -45,6 +54,7 @@ const Banner = () => {
                 </div>
                 <div id="slide5" className="carousel-item relative w-full">
                     <img src="https://traveler.marriott.com/wp-content/uploads/2021/02/HuatulcoOaxaca_6VillaEscondida_9.jpg" className="w-full object-cover rounded-xl" />
+                    {/* <img src={properties[randId].image} className="w-full object-cover rounded-xl" /> */}
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" className="btn btn-circle">❮</a>
                         <a href="#slide1" className="btn btn-circle">❯</a>
