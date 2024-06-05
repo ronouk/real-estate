@@ -34,8 +34,8 @@ const Header = () => {
                         <div className="w-10">
                             <img className="rounded-full" alt="Tailwind CSS Navbar component" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                         </div>
-                        
-                        <a className="border px-4 py-2 rounded-lg cursor-pointer font-bold bg-transparent text-white hover:bg-transparent hover:border-yellow-500 hover:text-yellow-500 transition"><NavLink to='/login'>Login</NavLink></a>
+
+                        <NavLink to='/login' className="border px-4 py-2 rounded-lg cursor-pointer font-bold bg-transparent text-white hover:bg-transparent hover:border-yellow-500 hover:text-yellow-500 transition">Login</NavLink>
                     </div>
                 </div>
             </div>

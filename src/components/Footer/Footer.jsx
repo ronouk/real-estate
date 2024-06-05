@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <div id="footer" className="bg-[#151B2E] text-white">
-            <footer className="w-11/12 lg:w-3/4 mx-auto footer py-12 lg:py-24 text justify-center lg:justify-between items-center">
+            <footer className="w-11/12 lg:w-3/4 mx-auto footer py-12 lg:py-24 text justify-center md:justify-between items-center">
                 <aside className="flex flex-col font-bold text-yellow-700 items-center border p-4 rounded-lg">
                     <img src="/logo_luxury_estate_small.png" width={96} alt="" />
                     <p className="uppercase text-yellow-400">Luxury Real Estate</p>

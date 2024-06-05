@@ -1,7 +1,7 @@
 
 const Banner = () => {
     return (
-        <div>
+        <div data-aos="fade-up" data-aos-duration="4000">
             <div className="carousel w-full h-[600px] mb-12">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src="https://images.mansionglobal.com/im-552743?width=1299&height=866" className="w-full object-cover rounded-xl" />
