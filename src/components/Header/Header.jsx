@@ -15,13 +15,14 @@ const Header = () => {
             <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-2 xl:px-4 py-2 text-black rounded-lg font-bold"><NavLink to='/'>Home</NavLink></li>
             <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-2 xl:px-4 py-2 text-black rounded-lg font-bold"><NavLink to='/real-estate'>Real Estates</NavLink></li>
             <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-2 xl:px-4 py-2 text-black rounded-lg font-bold"><NavLink to='/faq'>FAQs</NavLink></li>
-            <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-2 xl:px-4 py-2 text-black rounded-lg font-bold"><a href="#footer">Contact</a></li>
+
             {
                 user ?
-                    ''
+                    <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-2 xl:px-4 py-2 text-black rounded-lg font-bold"><NavLink to='/update-user'>Update User</NavLink></li>
                     :
-                    <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-2 xl:px-4 py-2 text-black rounded-lg font-bold"><NavLink to='register'>Register</NavLink></li>
+                    <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-2 xl:px-4 py-2 text-black rounded-lg font-bold"><NavLink to='/register'>Register</NavLink></li>
             }
+            
         </>
     return (
         <div>
@@ -49,18 +50,18 @@ const Header = () => {
                         <div className="w-10">
                             <img title={
                                 user ?
-                                user.displayName
-                                :
-                                "No logged in user"
+                                    user.displayName
+                                    :
+                                    "No logged in user"
                             }
-                            className="rounded-full"
-                            alt="User image"
-                            src={
-                                user ?
-                                user.photoURL
-                                :
-                                'https://png.pngtree.com/png-clipart/20191122/original/pngtree-user-icon-isolated-on-abstract-background-png-image_5192004.jpg'
-                            } />
+                                className="rounded-full"
+                                alt="User image"
+                                src={
+                                    user ?
+                                        user.photoURL
+                                        :
+                                        'https://png.pngtree.com/png-clipart/20191122/original/pngtree-user-icon-isolated-on-abstract-background-png-image_5192004.jpg'
+                                } />
                         </div>
 
                         {
