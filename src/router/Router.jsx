@@ -8,6 +8,7 @@ import RealEstate from "../components/real-estate/RealEstate";
 import SingleProperty from "../components/property/SingleProperty";
 import Faq from "../components/Faq/Faq";
 import PrivateRoute from "./PrivateRoute";
+import UpdateUser from "../components/authentication/UpdateUser";
 
 const router = createBrowserRouter([
     {
@@ -48,6 +49,13 @@ const router = createBrowserRouter([
                         <Faq></Faq>
                     </PrivateRoute>
             },
+            {
+                path: '/update-user',
+                element:
+                    <PrivateRoute>
+                        <UpdateUser></UpdateUser>
+                    </PrivateRoute>
+            }
         ]
     }
 ])

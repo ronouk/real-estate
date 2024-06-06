@@ -22,7 +22,7 @@ const Header = () => {
                     :
                     <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-2 xl:px-4 py-2 text-black rounded-lg font-bold"><NavLink to='/register'>Register</NavLink></li>
             }
-            
+
         </>
     return (
         <div>

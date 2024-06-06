@@ -61,7 +61,7 @@ const SingleProperty = () => {
                     </div>
                 </div>
 
-                <button className="btn border-yellow-500" onClick={() => navigate(-1)}>Go Back</button>
+                <button className="btn border border-yellow-500 bg-transparent hover:bg-yellow-600 hover:text-white" onClick={() => navigate(-1)}>Go Back</button>
             </div>
         </div>
     );

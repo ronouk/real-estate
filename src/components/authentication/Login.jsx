@@ -1,15 +1,17 @@
 import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import { Helmet } from "react-helmet-async";
-import { FaGoogle } from "react-icons/fa";
+import { FaGoogle, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 // import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 // import { FaTwitter } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import app from "../../firebase/firebase.init";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 
 const Login = () => {
+
+    const [showPassword, setShowPassword] = useState(false)
 
     const { signIn } = useContext(AuthContext);
     const location = useLocation();
@@ -91,11 +93,22 @@ const Login = () => {
                                     <input type="email" name="email" placeholder="Your email" className="input input-bordered" required />
                                 </div>
 
-                                <div className="form-control">
+                                <div className="form-control relative">
                                     <label className="label">
                                         <span className="label-text">Password</span>
                                     </label>
-                                    <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+                                    <input
+                                        type={showPassword ? "text" : "password"}
+                                        name="password"
+                                        placeholder="password"
+                                        className="input input-bordered"
+                                        required />
+                                    <span onClick={() => setShowPassword(!showPassword)} className="absolute right-4 top-[52px]">
+                                        {
+                                            showPassword ?
+                                                <FaRegEye /> : <FaRegEyeSlash />
+                                        }
+                                    </span>
                                 </div>
 
                                 <div className="form-control my-6">
