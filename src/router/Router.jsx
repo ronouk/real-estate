@@ -7,6 +7,7 @@ import Login from "../components/authentication/Login";
 import RealEstate from "../components/real-estate/RealEstate";
 import SingleProperty from "../components/property/SingleProperty";
 import Faq from "../components/Faq/Faq";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -34,12 +35,18 @@ const router = createBrowserRouter([
             },
             {
                 path: '/viewdetails/:id',
-                element: <SingleProperty></SingleProperty>,
+                element:
+                    <PrivateRoute>
+                        <SingleProperty></SingleProperty>
+                    </PrivateRoute>,
                 loader: () => fetch('/data-luxury.json')
             },
             {
                 path: '/faq',
-                element: <Faq></Faq>
+                element:
+                    <PrivateRoute>
+                        <Faq></Faq>
+                    </PrivateRoute>
             },
         ]
     }

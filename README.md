@@ -1,6 +1,6 @@
 # Luxury Real Estate
 
-Live link: 
+Live link:
 
 #### Notable Features:
 
@@ -15,7 +15,7 @@ Live link:
 1. Daisy UI
 2. Helmet Async
 3. AOS Package
-4. Animate CSS
+4. React Loader Spinner
 
 #### Authentication:
 
