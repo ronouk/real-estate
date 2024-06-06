@@ -6,6 +6,7 @@ import Register from "../components/authentication/Register";
 import Login from "../components/authentication/Login";
 import RealEstate from "../components/real-estate/RealEstate";
 import SingleProperty from "../components/property/SingleProperty";
+import Faq from "../components/Faq/Faq";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
                 path: '/viewdetails/:id',
                 element: <SingleProperty></SingleProperty>,
                 loader: () => fetch('/data-luxury.json')
+            },
+            {
+                path: '/faq',
+                element: <Faq></Faq>
             }
         ]
     }

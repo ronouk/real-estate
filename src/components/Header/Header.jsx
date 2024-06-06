@@ -3,10 +3,11 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
     const links =
         <>
-            <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-4 py-2 text-black rounded-lg font-bold"><NavLink to='/'>Home</NavLink></li>
-            <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-4 py-2 text-black rounded-lg font-bold"><NavLink to='/real-estate'>Real Estate</NavLink></li>
-            <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-4 py-2 text-black rounded-lg font-bold"><a href="#footer">Contact</a></li>
-            <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-4 py-2 text-black rounded-lg font-bold"><NavLink to='register'>Register</NavLink></li>
+            <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-2 xl:px-4 py-2 text-black rounded-lg font-bold"><NavLink to='/'>Home</NavLink></li>
+            <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-2 xl:px-4 py-2 text-black rounded-lg font-bold"><NavLink to='/real-estate'>Real Estates</NavLink></li>
+            <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-2 xl:px-4 py-2 text-black rounded-lg font-bold"><NavLink to='/faq'>FAQs</NavLink></li>
+            <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-2 xl:px-4 py-2 text-black rounded-lg font-bold"><a href="#footer">Contact</a></li>
+            <li className="lg:text-white mb-2 lg:mb-0 cursor-pointer hover:text-yellow-500 border hover:border-yellow-500 transition px-2 xl:px-4 py-2 text-black rounded-lg font-bold"><NavLink to='register'>Register</NavLink></li>
         </>
     return (
         <div>
@@ -26,7 +27,7 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="navbar-center hidden lg:flex">
-                        <ul className="menu menu-horizontal gap-12">
+                        <ul className="menu menu-horizontal gap-6 xl:gap-12">
                             {links}
                         </ul>
                     </div>
