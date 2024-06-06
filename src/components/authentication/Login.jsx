@@ -11,7 +11,8 @@ import { AuthContext } from "../../providers/AuthProvider";
 
 const Login = () => {
 
-    const [showPassword, setShowPassword] = useState(false)
+    const [showPassword, setShowPassword] = useState(false);
+    const [loginError, setLoginError] = useState('');
 
     const { signIn } = useContext(AuthContext);
     const location = useLocation();
@@ -28,6 +29,9 @@ const Login = () => {
         const password = form.get('password');
         console.log(email, password);
 
+        //reset status message
+        setLoginError('')
+
         signIn(email, password)
             .then(result => {
                 console.log(result.user)
@@ -37,6 +41,7 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error)
+                setLoginError(error.message)
             })
     }
 
@@ -47,6 +52,10 @@ const Login = () => {
     const googleProvider = new GoogleAuthProvider();
 
     const handleGoogleSignIn = () => {
+
+        //reset status message
+        setLoginError('')
+
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 console.log(result.user)
@@ -54,12 +63,17 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error)
+                setLoginError(error.message)
             })
     }
 
     //github login
     const githubProvider = new GithubAuthProvider();
     const handleGithubSignIn = () => {
+
+        //reset status message
+        setLoginError('')
+
         signInWithPopup(auth, githubProvider)
             .then(result => {
                 console.log(result.user)
@@ -67,6 +81,7 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error)
+                setLoginError(error.message)
             })
     }
 
@@ -132,6 +147,12 @@ const Login = () => {
                                 </div>
                             </form>
                         </div>
+
+                        {/* if error, show it */}
+                        {
+                            loginError && <p className="text-center text-red-600 font-bold">{loginError}</p>
+                        }
+
                     </div>
                 </div>
             </div>

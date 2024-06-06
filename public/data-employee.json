@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Rony Ronouk",
+    "position": "Managing Director",
+    "image": "https://www.netapp.com/media/web-side-x-side-professional-services_tcm19-8095.jpg?v=102953"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "position": "Chief Marketing Officer",
+    "image": "https://st4.depositphotos.com/5260901/31593/i/450/depositphotos_315935436-stock-photo-beautiful-female-african-american-business.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Michael Johnson",
+    "position": "Sales Director",
+    "image": "https://img.freepik.com/free-photo/business-young-professional-businessman-glasses-smiling-camera-cross-arm-chest-with_1258-26377.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Emily Davis",
+    "position": "Marketing Manager",
+    "image": "https://cdn.sanity.io/images/xmpcmhrn/production/f363771ad3c072ec71f1ea5e8f3868d18de231a6-1200x800.jpg?rect=0,62,1200,674&w=436&h=245&q=80&fit=max&auto=format"
+  },
+  {
+    "id": 5,
+    "name": "Robert Wilson",
+    "position": "Real Estate Analyst",
+    "image": "https://img.freepik.com/free-photo/smiling-young-male-professional-standing-with-arms-crossed-while-making-eye-contact-against-isolated-background_662251-838.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Olivia Brown",
+    "position": "Administrative Assistant",
+    "image": "https://imgv3.fotor.com/images/blog-richtext-image/female-professional-corporate-headshots.png"
+  },
+  {
+    "id": 7,
+    "name": "William Garcia",
+    "position": "Customer Service Representative",
+    "image": "https://cdn.create.vista.com/api/media/small/188125512/stock-photo-portrait-smiling-businessman-suit-eyeglasses-looking-camera"
+  },
+  {
+    "id": 8,
+    "name": "Sophia Martinez",
+    "position": "Leasing Consultant",
+    "image": "https://img.freepik.com/premium-photo/business-executive-woman_841014-8677.jpg"
+  },
+  {
+    "id": 9,
+    "name": "James Anderson",
+    "position": "Property Inspector",
+    "image": "https://headshots-inc.com/wp-content/uploads/2023/02/professional-headshot-photography-example-7-1.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Mia Thompson",
+    "position": "Real Estate Consultant",
+    "image": "https://media.istockphoto.com/id/1318482009/photo/young-woman-ready-for-job-business-concept.jpg?s=612x612&w=0&k=20&c=Jc1NcoUMoM78AxPTh9EApaPU2kXh2evb499JgW99b0g="
+  }
+]

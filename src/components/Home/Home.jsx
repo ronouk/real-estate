@@ -5,6 +5,7 @@ import Properties from "../homeComponenets/Properties";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Team from "../homeComponenets/Team";
 
 AOS.init();
 
@@ -17,6 +18,7 @@ const Home = () => {
             <Banner></Banner>
             <Ribbon></Ribbon>
             <Properties></Properties>
+            <Team></Team>
             
         </div>
     );

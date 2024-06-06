@@ -195,6 +195,7 @@ const Register = () => {
                             </form>
                         </div>
 
+                        {/* if error, show it */}
                         {
                             registerError && <p className="text-center text-red-600 font-bold">{registerError}</p>
                         }
