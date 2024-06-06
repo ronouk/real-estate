@@ -1,10 +1,10 @@
-import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup, updateProfile } from "firebase/auth";
 import { Helmet } from "react-helmet-async";
 import { FaGoogle, FaRegEye } from "react-icons/fa";
 // import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 // import { FaTwitter } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import app from "../../firebase/firebase.init";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
@@ -15,6 +15,8 @@ const Register = () => {
     const [registerError, setRegisterError] = useState('');
     const [success, setSuccess] = useState('')
     const [showPassword, setShowPassword] = useState(false)
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const auth = getAuth(app);
 
@@ -30,7 +32,7 @@ const Register = () => {
         const photoUrl = form.get('photoUrl');
         const email = form.get('email');
         const password = form.get('password');
-        console.log(name, photoUrl, email, password);
+        // console.log(name, photoUrl, email, password);
 
         //reset status message
         setRegisterError('')
@@ -51,6 +53,21 @@ const Register = () => {
             .then(result => {
                 console.log(result.user);
                 setSuccess('Registration Successfull')
+
+                //update profile
+                updateProfile(result.user, {
+                    displayName: name,
+                    photoURL: photoUrl,
+                })
+                .then( () => {
+                    console.log("Profile updated")
+                })
+                .catch(error => {
+                    console.log(error)
+                })
+
+                //navigate after login
+                navigate(location.state ? location.state : '/')
             })
             .catch(error => {
                 console.log(error.message)
@@ -72,6 +89,9 @@ const Register = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 console.log(result.user.photoURL)
+
+                //navigate after login
+                navigate(location.state ? location.state : '/')
             })
             .catch(error => {
                 console.log(error)
@@ -90,6 +110,9 @@ const Register = () => {
         signInWithPopup(auth, githubProvider)
             .then(result => {
                 console.log(result.user)
+
+                //navigate after login
+                navigate(location.state ? location.state : '/')
             })
             .catch(error => {
                 console.log(error)
