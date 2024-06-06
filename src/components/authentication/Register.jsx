@@ -6,10 +6,38 @@ import { FaGithub } from "react-icons/fa";
 // import { FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import app from "../../firebase/firebase.init";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Register = () => {
 
     const auth = getAuth(app);
+
+    const {createUser} = useContext(AuthContext)
+
+    //email password authetication
+
+    const handleRegister = (e) => {
+        e.preventDefault();
+        console.log(e.currentTarget);
+        const form = new FormData(e.currentTarget);
+        const name = form.get('name');
+        const photoUrl = form.get('photoUrl');
+        const email = form.get('email');
+        const password = form.get('password');
+        console.log(name, photoUrl, email, password);
+
+        //create user
+        createUser(email, password)
+        .then(result => {
+            console.log(result.user)
+        })
+        .catch(error =>{
+            console.log(error.message)
+        })
+    }
+
+    //third party authentication
 
     //google login
     const googleProvider = new GoogleAuthProvider();
@@ -17,7 +45,7 @@ const Register = () => {
     const handleGoogleSignIn = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
-                console.log(result.user)
+                console.log(result.user.photoURL)
             })
             .catch(error => {
                 console.log(error)
@@ -49,7 +77,7 @@ return (
                         <h1 className="text-3xl font-bold">Register now!</h1>
                     </div>
                     <div className="card shrink-0 w-full max-w-sm border border-yellow-500">
-                        <form className="card-body">
+                        <form onSubmit={handleRegister} className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Name</span>

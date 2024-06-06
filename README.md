@@ -1,8 +1,24 @@
-# React + Vite
+# Luxury Real Estate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live link: 
 
-Currently, two official plugins are available:
+#### Notable Features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Curated List
+2. All estates list
+3. Estate details
+4. Answer to necessary queries
+5. Contact details
+
+#### Packages used:
+
+1. Daisy UI
+2. Helmet Async
+3. AOS Package
+4. Animate CSS
+
+#### Authentication:
+
+1. Email/Password
+2. Google
+3. Github

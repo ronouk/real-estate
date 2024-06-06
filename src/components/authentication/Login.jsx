@@ -1,11 +1,66 @@
+import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import { Helmet } from "react-helmet-async";
 import { FaGoogle } from "react-icons/fa";
 // import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 // import { FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import app from "../../firebase/firebase.init";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Login = () => {
+
+    const { signIn } = useContext(AuthContext);
+    const auth = getAuth(app);
+
+    //email password login
+    const handleLogin = (e) => {
+        e.preventDefault();
+        console.log(e.currentTarget);
+        const form = new FormData(e.currentTarget);
+        const email = form.get("email");
+        const password = form.get('password');
+        console.log(email, password);
+
+        signIn(email, password)
+            .then(result => {
+                console.log(result.user)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
+
+
+    //third party login
+
+    //google login
+    const googleProvider = new GoogleAuthProvider();
+
+    const handleGoogleSignIn = () => {
+        signInWithPopup(auth, googleProvider)
+            .then(result => {
+                console.log(result.user)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
+
+    //github login
+    const githubProvider = new GithubAuthProvider();
+    const handleGithubSignIn = () => {
+        signInWithPopup(auth, githubProvider)
+            .then(result => {
+                console.log(result.user)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
+
+
     return (
         <div className="w-11/12 lg:w-3/4 mx-auto mb-12">
             <Helmet>
@@ -19,7 +74,7 @@ const Login = () => {
                             <h1 className="text-3xl font-bold">Login now!</h1>
                         </div>
                         <div className="card shrink-0 w-full max-w-sm border border-yellow-500">
-                            <form className="card-body">
+                            <form onSubmit={handleLogin} className="card-body">
 
                                 <div className="form-control">
                                     <label className="label">
@@ -42,10 +97,10 @@ const Login = () => {
                                 <div className="flex items-center">
                                     <p className="font-semibold">Login with:</p>
                                     <div className="flex gap-4">
-                                        <p className="cursor-pointer text-xl hover:text-[#4081EC] transition">
+                                        <p onClick={handleGoogleSignIn} className="cursor-pointer text-xl hover:text-[#4081EC] transition">
                                             <FaGoogle />
                                         </p>
-                                        <p className="cursor-pointer text-xl">
+                                        <p onClick={handleGithubSignIn} className="cursor-pointer text-xl">
                                             <FaGithub />
                                         </p>
                                     </div>
@@ -59,6 +114,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };
